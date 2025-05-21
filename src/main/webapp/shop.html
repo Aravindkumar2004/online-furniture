@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box ;
+}
+.position{
+    position: fixed;
+    width: 100%;
+}
+.coverup{
+    width:100%;
+    height: 105px;
+
+}
+
+.navbar{
+    width:100%;
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+   
+}
+.nav-logo{
+    width: 130px;
+    height: 43px;
+    display: flex;
+    margin-top:5px;
+    
+  
+}
+.name{
+    margin-left: 9px;
+    color: rgb(1, 225, 250);;
+}
+.name h4{
+    margin-top: 0%;
+}
+.I{
+        color: rgb(255, 153, 51);
+}
+.N{
+    color: white;
+}
+.D{
+    color:rgb(18, 136, 7);
+}
+
+.logo{
+    margin-top:px;
+    color: rgb(1, 225, 250);
+    height: 40px;
+    width: 50px;
+    font-weight:900;
+    font-size: xx-large;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+/**box2**/
+.add-first{
+      color: #cccccc;
+      font-size:1rem ;
+      margin-left: 15px; 
+}
+.add-sec{
+   color: white ;
+   font-size:1rem ;
+   margin-left: 6px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/**3rd box**/
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    margin-left: 6px;
+   
+}
+.search-select{
+    background-color: #f3f3f3;
+    width:50px ;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+
+}
+.search-icon{
+
+    width:45px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(181, 117, 34);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    color: #0f1111;
+
+}
+/**4th box**/
+
+.button{
+margin-top:5px;
+    height: 35px;
+    width: 90px;
+    border-radius: 10 px;
+    color:black;
+   
+
+}
+button a{
+    text-decoration: none;
+}
+/**panal**/
+.panel{
+
+    margin-top:0px;
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+.panel-ops ul li  {
+  display:inline;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  text-decoration:none;
+
+}
+ul li a{
+    color:white;
+    text-decoration: none;
+}
+.dropdown-menu{
+    display: none ;
+ 
+}
+.dropdown-menu ul li:hover{
+    background-color: rgb(169, 169, 176);
+    border-radius: 3px;
+    border: 1px solid white;
+   
+  
+}
+.drop ul li:hover .dropdown-menu {
+    display: block;
+    color: black;
+    position: absolute;
+    background:#222f3d;
+    box-shadow: 2px black;
+
+  
+}
+.drop ul li:hover .dropdown-menu ul{
+    display:block;
+   
+}
+.drop ul li:hover .dropdown-menu ul li{
+    display: block;
+    width:auto ;
+    padding: 8px;
+    text-align:left;
+    
+}
+
+.panel-all{
+    display: flex;
+}
+.panel-all p{
+    margin-left: 5px;
+}
+.all{
+display:none;
+font-weight: 100;
+}
+.panel-all ul li:hover .all ul{
+    display: block;
+}
+.panel-all ul li:hover{
+    background-color: rgb(169, 169, 176);
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.panel-all i:hover .all{
+    display: block;
+    color: black;
+    position: absolute;
+    background:#222f3d;
+    box-shadow: 2px black;
+}
+.panel-all i:hover .all ul li{
+    display: block;
+    width:auto ;
+    padding: 8px;
+    text-align:left; 
+}
+
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+    display: flex;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.hero-section video{
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px solid black;
+    width:450px;
+    height: 240px;
+    margin: 10px;
+   
+    }
+    .hero-section img{
+        height:240px ;
+        width:1000px;
+        border-radius: 2px solid black;
+    }
+/** main**/
+
+/**shop-section**/
+
+
+.heading1{
+        align-items: stretch;
+        color: white;
+        height: 40px;
+        text-align: center;
+        width: auto;
+        background-color:rgb(181, 117, 34) ;
+        border-radius: 10px;
+        padding: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+        
+    }
+    .shop-section{
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: space-evenly;
+         background-color: #dfe8e6;
+    
+        }
+    .box{
+        height: 590px;
+        border: 1px solid #5f6974;
+        width: 23%;
+        background-color: rgb(216, 214, 214);
+        padding: 20px 0px 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        
+    }
+    
+     .box-content{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 3px;
+            
+        }
+      
+    .box-content pre{
+            padding-top: 10px;
+            display:flex;
+            font-weight: 400;
+            font-size:large;
+            color:#203347;
+            font-family: Arial, Helvetica, sans-serif;    
+        }
+        .box-content pre h4{
+            padding: 4px;
+            color: #037286;
+        }
+    
+        .box-content img{
+        height:340px;
+        width:98%;
+        margin-top:3px ;
+        margin-bottom:3px;
+     
+    }
+    .box-content p{
+        color: black;
+    }
+    .box button{
+        margin-left: 40% ;
+        margin-bottom: 3%;
+        height: 30px;
+        width: 90px;
+        border-radius: 6px;
+        background-color: rgb(189, 189, 12);
+       
+     
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**footer**/
+footer {
+    background: #222f3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+footer p{
+    padding: 5px;
+}
+footer p i{
+    height: 4px;
+    width: 5px;
+    padding-right:18px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="position">
+        <div class="navbar">
+            <div class="nav-logo border">
+              <div class="logo "> <i>&#9763; </i></div>
+              <div class="name"><pre><strong> ARAV<i class="I">I</i><i class="N">N</i><i class="D">D</i> <i>
+   Furniture</i></strong></pre></div>
+             
+           </div>
+           <div class="nav-address border">
+              <p class="add-first"> Deliver</p>
+              <div class="add-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="add-sec">India</p>
+              </div>
+           </div>
+           <div class="nav-search">
+              <select class="search-select">
+                  <option value="">All</option>
+              </select>
+              <input placeholder="Search Furniture" class="search-input">
+              <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+           </div>
+           <div class="button border">
+<button type="submit"><a href="login.html">LOGOUT</a></button>
+           </div>
+           
+        </div>
+  
+        <div class="panel">
+          <div class="panel-all">
+              <i class="fa-solid fa-bars">
+                   <div class=" all drop">
+                    <ul>
+                       <li><a href="house.html">Bed</a></li>
+                        <li><a href="house.html">Sofa</a></li>
+                        <li><a href="office.html">Table</a></li>
+                        <li><a href="house.html">Dining set</a></li>
+                        <li><a href="garden.html">Chair</a></li>
+                        <li><a href="office.html">Coffee table</a></li>
+                        <li><a href="office.html">Desks</a></li>
+                        <li><a href="office.html">Racks</a></li>
+                        <li><a href="shop.html">Cabinets</a></li>
+                    </ul>
+                   </div>
+
+              </i>
+              <p>All</p>
+          </div>
+          <div class="panel-ops drop">
+              <ul>
+                 <li><a href="">today's Deals</a>
+                  <div class="dropdown-menu">
+                   <ul>
+                     <li><a href="garden.html">Chairs 15%off</a></li>
+                    <li><a href="office.html">desks 25%off</a></li>
+                    <li><a href="house.html">sofas 10%off</a></li>
+                    <li><a href="garden.html">elastic chairs 50%off</a></li>
+
+                   </ul>     
+
+                  </div>
+                
+                </li>
+                <li><a href="customerservice.html"> Customer Service  </a></li>
+                <li><a href="office.html">Office-Equipment</a></li>
+                <li><a href="house.html">House-Equipment</a></li>
+                <li><a href="shop.html">Shop-Equipment</a></li>
+                <li><a href="garden.html">Garden-Equipment</a></li>
+                 
+              </ul>
+          </div>
+          <div class="panel-deals">
+              Shop deals in Furniture
+          </div>
+        </div>
+    </div>
+          <div class="coverup">
+            <img src="https://www.shutterstock.com/image-illustration/white-color-background-pure-bright-260nw-2099163190.jpg" alt="">
+          </div>
+        <div class="hero-section">         
+            <img src="https://uberlyfe.com/cdn/shop/files/Website_1920X720_1_1920x.jpg?v=1740544253" alt="">
+            <video src="video4.mp4"  autoplay muted loop ></video>
+
+        </div>
+        
+   </header>
+  <main>
+
+    <div class="heading1"><h1>Shop Furniture</h1></div>
+       <div class="shop-section">
+       
+        <div class="box1 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0001</h3>
+                <img src="https://m.media-amazon.com/images/I/41z7DigtGxL.jpg" alt="">
+               <p>Lukia Metal Adjustable Addon Wall Rack Powder Coating For Kitchen, Supermarket, Shops And Book Shelf 190 * 90 Cm (6.2 Feet X 3 Feet) 5 Shelves Set Of 5, White</p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;10000</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box2 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0002</h3>
+                 <img src="https://m.media-amazon.com/images/I/416wNQ8BPkL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>flux 20 Inch Wooden Floating Shelves for Wall, Home Decorative Shelf Wall Mounted Ledge Shelf for Bathroom, Bedroom, Living Room Home and Office (Pack of 1, Brown)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;600</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box3 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0003</h3>
+                 <img src="https://m.media-amazon.com/images/I/31CM9-cKJ7L._SY300_SX300_QL70_FMwebp_.jpg" alt="">
+               <p> Parikshit Sublimation Wall Mounted Shoe Rack, Self-Adhesive Storage Shelf, No-Drill Display Stand Organizer shoes display stand for shop glass (16)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;199</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box4 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0004</h3>
+                 <img src="https://m.media-amazon.com/images/I/31m8Spv4srL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>Q1 Beads Stainless Steel Wall Mount 5 Ball Pin Hooks Drope Hanger for Furniture Wardrobe/Cupboard/Shop/Showroom, Boutique Hanging Accessories - Pack of 2</p>
+               <pre><h5>rating:-</h5> <h4>* * * </h4></pre>
+               <h3>Cost:- &#8377;150</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box5 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0005</h3>
+                 <img src="https://m.media-amazon.com/images/I/71TK8IZ2svL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+               <p>STAR WORK Adjustable Racking Shelves Multipurpose Storage Rack{FREE Drawer Shelf Liner 30 X 60 CM (5 sheet )(5 SECTION, Olive)(Crc Mild Steel,High Desnity MDF)(Green)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;2999</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box6 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0006</h3>
+                 <img src="https://m.media-amazon.com/images/I/31W4m+vIt9L._SY300_SX300_.jpg" alt="">
+               <p>JUTERI Plastic Studio 6 XL Free Standing Chest of Drawers (30 Cm X 38 Cm X 116 Cm) Standard (Multicolour, 6XL Multi Big Size(6XL), Matte)</p>
+               <pre><h5>rating:-</h5> <h4>* * * </h4></pre>
+               <h3>Cost:- &#8377;399</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box7 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0007</h3>
+                 <img src="https://m.media-amazon.com/images/I/41FIJ0xJPDL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>Nutech Decor Furniture Pub Stool Iron Art Bar Stool Chair with Bar Rest Pub Kitchen Counter Leisure High Footrest Stool Velvet Coffee/Tea/Milk Shop Bar Stools Chair.</p>
+               <pre><h5>rating:-</h5> <h4>* * * *</h4></pre>
+               <h3>Cost:- &#8377;3050</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box8 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0008</h3>
+                 <img src="https://m.media-amazon.com/images/I/61VxLMEuW6L._SX679_.jpg" alt="">
+               <p>Lepose 4 x 6 Nylon Wheel Caster for Furniture Table Trolley/300 Kg Load Capacity, Orange  </p>
+               <pre><h5>rating:-</h5> <h4>* * * *</h4></pre>
+               <h3>Cost:- &#8377;249</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box9 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0009</h3>
+                 <img src="https://m.media-amazon.com/images/I/31MnHpQIFiS._AC_UL480_FMwebp_QL65_.jpg" alt="">
+               <p>CSS® Black Short Shop Stool - Height Adjustable 17-22 Inch Swivel Chair Stool for Office,SPA,Salon,Manicure and Tattoo Stations Small</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;2500</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box10 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0010</h3>
+                 <img src="https://m.media-amazon.com/images/I/71d82J7MiKL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+               <p>AMAZE SHOPPEE Wooden Foldable Coffee Table - Mango Wood, Light Brown - Perfect Center Table for Living Room (15 INCHES)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;500</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box11 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0011</h3>
+                 <img src="https://m.media-amazon.com/images/I/41wH2WpYbUL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>basics 3-Tier Metal Rolling Cart, powder-coated finish</p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;650</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box12 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0012</h3>
+                 <img src="https://m.media-amazon.com/images/I/71Qj5cmNJ3L._AC_UL480_FMwebp_QL65_.jpghttps://m.media-amazon.com/images/I/71Qj5cmNJ3L._SY879_.jpg" alt="">
+               <p>Yash Mudda House Handicraft Bamboo Chair for Outdoor - Brown</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;1400</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box13 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0013</h3>
+                 <img src="https://m.media-amazon.com/images/I/4175HrvBPJL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>X Went Living Room Benches - Wooden Upholstered Seating for Home & Office - Solid Wood Dining Table Bench - Indoor/Outdoor Multi-Purpose Seating</p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;1800</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box14 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0014</h3>
+                 <img src="https://m.media-amazon.com/images/I/51RpTkFP6zL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>Lukzer 4 Layer Multipurpose Rack Industrial Metal Frame with Engineered Wood Bookshelf for Kitchen, Bedroom & Living Room Stand (112 x 58.5 x 23.5, White & Black/MMR-001)</p>
+               <pre><h5>rating:-</h5> <h4>* * * *</h4></pre>
+               <h3>Cost:- &#8377;2100</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="15 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0015</h3>
+                 <img src="https://m.media-amazon.com/images/I/41w4zJqy9iL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>CraftsX2Z Handmade Wooden Natural Brown Foldable Coffee Table, Adjustable Coffee Table, Side Table, End Table for Poolside Garden, Living Room, Bedroom, Small Spaces Etc.</p>
+               <pre><h5>rating:-</h5> <h4>* * *  </h4></pre>
+               <h3>Cost:- &#8377;1800</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box16 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0016</h3>
+                 <img src="https://m.media-amazon.com/images/I/5146TwtxRkL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>NUTECH IMPEX 18 Inch Round Velvet Versatile Metal Frame Coffee Shop Milk Tea Shop Bar Stools for Home, Kitchen Office Modern Design Multi-Purpose Seating Chairs Stylish Décor.</p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;1000</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box17 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0017</h3>
+                 <img src="https://m.media-amazon.com/images/I/417rDmVxalL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>Heartily® Laabh Beautiful Wooden Pooja Stand for Home Pooja Mandir for Home Temple for Home and Office Puja Mandir for Home Wall Mounted with LED Spot Light Size.</p>
+               <pre><h5>rating:-</h5> <h4>* * * *</h4></pre>
+               <h3>Cost:- &#8377;800</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="18 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0018</h3>
+                 <img src="https://m.media-amazon.com/images/I/41Tdqz15OVL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>Q1 Beads 24 Pcs 6 inch Stainless Steel Wall Mount Display Hook Hanger for Showroom/Mobile Shop/Supermarket/Clothes (Chrome)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377:245</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box19 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0019</h3>
+                 <img src="https://m.media-amazon.com/images/I/41EMau0YwjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+               <p>STAR WORK - 3-Tier Storage Shelf Rack Stand Turn-N-Tube End Table Corner Display Rack Hallway, Living Room, Metal, Easy Assembly, Space Saving, Industrial (Rectangle -3)            </p>
+               <pre><h5>rating:-</h5> <h4>* * * * *</h4></pre>
+               <h3>Cost:- &#8377;1100</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box20 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0020</h3>
+                 <img src="https://m.media-amazon.com/images/I/51fxZgarv8L._AC_UL480_FMwebp_QL65_.jpg" alt="">
+               <p>EVEREST MOLDED FURNITURE Web Series Outdoor Garden/Cafe Chair (Polypropylene, Set of 4 Pieces) (Brown)</p>
+               <pre><h5>rating:-</h5> <h4>* * * * </h4></pre>
+               <h3>Cost:- &#8377;1500</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+        <div class="box21 box" >
+            <div class="box-content">
+                <h3>ID:-AFS0021</h3>
+                 <img src="https://m.media-amazon.com/images/I/51eeHYiHN8L._SX679_.jpg" alt="">
+               <p>Rpi shop - 12 Pcs Heavy Duty Corner L Angle Bracket, 2 Inch X 1 Inch (50mm X 25mm) Corner Braces with Screws, Powder Coated 90 Degree Joint L Shape Bracket for DIY Projects.</p>
+               <pre><h5>rating:-</h5> <h4>* * * * * </h4></pre>
+               <h3>Cost:- &#8377;100</h3>
+              
+          </div>
+              <button type="submit">Order</button>
+        </div>
+      
+          
+      </div>    
+  </main>
+
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p><i class="fa-solid fa-envelope"></i>Email: aravind@furniturestore.com</p>
+    <p><i class="fa-solid fa-phone"></i>Phone:7288858779</p>
+    <p><i class="fa-brands fa-whatsapp"></i>Whatsapp:-7288858779</p>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="">
+    <style>
+     *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box ;
+}
+.navbar{
+    width: 100% ;
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.position{
+    position: fixed;
+    width: 100%;
+}
+.coverup{
+    width:100%;
+    height: 105px;
+
+}
+.nav-logo{
+    width: 130px;
+    height: 44px;
+    display: flex;
+    margin-top:5px;
+    
+  
+}
+.name{
+    margin-left: 9px;
+    color: rgb(1, 225, 250);;
+}
+.name h4{
+    margin-top: 0%;
+}
+.I{
+        color: rgb(255, 153, 51);
+}
+.N{
+    color: white;
+}
+.D{
+    color:rgb(18, 136, 7);
+}
+
+.logo{
+    margin-top:px;
+    color: rgb(1, 225, 250);
+    height: 40px;
+    width: 50px;
+    font-weight:900;
+    font-size: xx-large;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+    
+
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+/**box2**/
+.add-first{
+      color: #cccccc;
+      font-size:1rem ;
+      margin-left: 15px; 
+}
+.add-sec{
+   color: white ;
+   font-size:1rem ;
+   margin-left: 6px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/**3rd box**/
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    margin-left: 6px;
+   
+}
+.search-select{
+    background-color: #f3f3f3;
+    width:50px ;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+
+}
+.search-icon{
+
+    width:45px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(181, 117, 34);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    color: #0f1111;
+
+}
+/**4th box**/
+ . button{
+    height: 40px;
+    width: 90px;
+    border-radius:10px;
+    color:black;
+   
+
+}
+button a{
+    text-decoration: none;
+}
+
+/**panal**/
+.panel{
+
+margin-top:0px;
+height: 40px;
+background-color: #222f3d;
+display: flex;
+color: white;
+align-items: center;
+justify-content: space-evenly;
+
+}
+.panel-ops ul li  {
+display:inline;
+margin-left: 10px;
+cursor: pointer;
+border: none;
+color: white;
+text-decoration:none;
+
+}
+ul li a{
+color:white;
+text-decoration: none;
+}
+.dropdown-menu{
+display: none ;
+
+}
+.dropdown-menu ul li:hover{
+background-color: rgb(169, 169, 176);
+border-radius: 3px;
+border: 1px solid white;
+
+
+}
+.drop ul li:hover .dropdown-menu {
+display: block;
+color: black;
+position: absolute;
+background:#222f3d;
+box-shadow: 2px black;
+
+
+}
+.drop ul li:hover .dropdown-menu ul{
+display:block;
+
+}
+.drop ul li:hover .dropdown-menu ul li{
+display: block;
+width:auto ;
+padding: 8px;
+text-align:left;
+
+}
+
+.panel-all{
+display: flex;
+}
+.panel-all p{
+margin-left: 5px;
+}
+.all{
+display:none;
+font-weight: 100;
+}
+.panel-all ul li:hover .all ul{
+display: block;
+}
+.panel-all ul li:hover{
+background-color: rgb(169, 169, 176);
+border-radius: 3px;
+border: 1px solid white;
+}
+.panel-all i:hover .all{
+display: block;
+color: black;
+position: absolute;
+background:#222f3d;
+box-shadow: 2px black;
+}
+.panel-all i:hover .all ul li{
+display: block;
+width:auto ;
+padding: 8px;
+text-align:left; 
+}
+
+
+.panel-ops{
+width: 70%;
+font-size: 0.85rem;
+display: flex;
+}
+.panel-deals{
+font-size: 0.9rem;
+font-weight: 700;
+
+}
+    /**hero-section**/
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.hero-section>img{
+        height:350px ;
+        width: 1400px;
+        border-radius: 2px;
+        
+    }
+    main{
+        background-color:  #e2e7e6;
+    }
+.hello{
+      
+      margin-left: 20px;
+      margin-top: 30px;
+      
+      display: flex;
+
+     
+    }
+    .hello h1{
+        background-color:rgb(181, 117, 34) ;
+        width: 600px;
+        height: 40px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 3px;
+        border: 2px solid #222f3d ;
+
+    }
+.search{
+    margin-left: 25px;
+    margin-top: 80px;
+ 
+}
+.search-bar input{
+    margin-left: 0px;
+    margin-top: 10px;
+    height: 25px;
+    width: 900px;
+    border: 1px solid black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.search-bar i{
+    background-color:rgb(181, 117, 34);
+    height:18px ;
+    width:30px ;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    text-align: center;
+    padding: 6px;
+
+}
+.topics{
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+   background-color: #cccccc;
+   border-radius: 4px;
+   border: 2px solid black;
+
+}
+ul li{
+    list-style-type: none;
+    padding:10px;
+}
+.topics ul li a{
+    color: #0f1111;
+    margin-top: 30px;
+  
+}
+.topics h2{
+    background-color:rgb(181, 117, 34) ;
+    height: 40px;
+    text-align: center;
+    padding: 4px;
+ 
+}
+.topics ul li a:hover{
+    background-color:rgb(169, 169, 176);
+   padding: 2px;
+
+}
+
+
+footer {
+    background: #222f3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+  
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+} footer p{
+    padding: 5px;
+   }
+ footer p i{
+    height: 4px;
+    width: 5px;
+    padding-right:18px;
+ }
+
+    </style>
+    
+</head>
+<body>
+
+   
+    <header>
+        <div class="position">
+        <div class="navbar">
+            <div class="nav-logo border">
+              <div class="logo "> <i>&#9763; </i></div>
+              <div class="name"><pre><strong> ARAV<i class="I">I</i><i class="N">N</i><i class="D">D</i> <i>
+   Furniture</i></strong></pre></div>
+             
+           </div>
+           <div class="nav-address border">
+              <p class="add-first"> Deliver</p>
+              <div class="add-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="add-sec">India</p>
+              </div>
+           </div>
+           <div class="nav-search">
+              <select class="search-select">
+                  <option value="">All</option>
+              </select>
+              <input placeholder="Search Furniture" class="search-input">
+              <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+           </div>
+
+           <div class="button border">
+              <button type="submit" ><a href="home.html">HOME</a></button>
+           </div>
+           <div class="button border">
+            <button type="submit"><a href="logout">LOGOUT</a></button>
+         </div>
+           
+        </div>
+
+        <div class="panel">
+          <div class="panel-all">
+              <i class="fa-solid fa-bars">
+                   <div class=" all drop">
+                    <ul>
+                       <li><a href="house.html">Bed</a></li>
+                        <li><a href="house.html">Sofa</a></li>
+                        <li><a href="office.html">Table</a></li>
+                        <li><a href="house.html">Dining set</a></li>
+                        <li><a href="garden.html">Chair</a></li>
+                        <li><a href="office.html">Coffee table</a></li>
+                        <li><a href="office.html">Desks</a></li>
+                        <li><a href="office.html">Racks</a></li>
+                        <li><a href="shop.html">Cabinets</a></li>
+                    </ul>
+                   </div>
+
+              </i>
+              <p>All</p>
+          </div>
+          <div class="panel-ops drop">
+              <ul>
+                 <li><a href="">today's Deals</a>
+                  <div class="dropdown-menu">
+                   <ul>
+                    <li><a href="garden.html">Chairs 15%off</a></li>
+                    <li><a href="office.html">desks 25%off</a></li>
+                    <li><a href="house.html">sofas 10%off</a></li>
+                    <li><a href="garden.html">elastic chairs 50%off</a></li>
+
+                   </ul>     
+
+                  </div>
+                
+                </li>
+               <li><a href="customerservice.html"> Customer Service  </a></li>
+                <li><a href="office.html">Office-Equipment</a></li>
+                <li><a href="house.html">House-Equipment</a></li>
+                <li><a href="shop.html">Shop-Equipment</a></li>
+                <li><a href="garden.html">Garden-Equipment</a></li>
+                    
+              </ul>
+          </div>
+          <div class="panel-deals">
+              Shop deals in Furniture
+          </div>
+        </div>
+    </div>
+        <div class="coverup">
+            <img src="https://www.shutterstock.com/image-illustration/white-color-background-pure-bright-260nw-2099163190.jpg" alt="">
+          </div>
+
+        <div class="hero-section">
+            <img src="https://thumbs.dreamstime.com/b/relocation-professional-delivery-company-loader-service-moving-to-new-house-website-landing-page-workers-carry-boxes-177057230.jpg" alt="">
+           
+        </div>
+    </header>
+
+    <main>
+       
+          <div class="hello">
+            <h1>Hello. What can we help you with?</h1>
+          </div>
+         <div class="search">
+            <h2>Find more solutions </h2><h3><i>Type something like, "question about a charge"</i></h3>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+                
+                
+            </div>
+         </div>
+
+         <div class="topics">
+            <h2>Browse Help Topics</h2>
+            <ul>
+                <li><a href="">Recommended Topics</a></li>
+                <li><a href="">Shipping & Delivery</a></li>
+                <li><a href="">Payments & Pricing </a></li>
+                <li><a href="">Product Troubleshooting</a></li>
+                <li><a href="">Furniture Bazaar</a></li>
+                <li><a href="">Returns, Refunds, Replacement</a></li>
+                <li><a href="">Ordering</a></li>
+                <li><a href="">Managing Your Account</a></li>
+                <li><a href="">Devices & Digital Services (D2S)</a></li>
+                <li><a href="">More Help (D2S)</a></li>
+                <li><a href="">Other Topics & More Help</a></li>
+                <li><a href="">Self Service</a></li>
+            </ul>
+            
+
+         </div>
+    </main>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p><i class="fa-solid fa-envelope"></i>Email: aravind@furniturestore.com</p>
+        <p><i class="fa-solid fa-phone"></i>Phone:7288858779</p>
+        <p><i class="fa-brands fa-whatsapp"></i>Whatsapp:-7288858779</p>
+    </footer>
+    
+</body>
+</html>
